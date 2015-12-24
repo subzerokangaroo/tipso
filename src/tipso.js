@@ -374,7 +374,7 @@
     },
     update: function(key, value) {
       var obj = this;
-      if (value) {
+      if (typeof(value) !== "undefined") {
         obj.settings[key] = value;
       } else {
         return obj.settings[key];
